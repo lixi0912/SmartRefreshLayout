@@ -34,10 +34,10 @@ dependencies {
     })
     testImplementation 'junit:junit:4.12'
     //noinspection GradleDependency
-    api 'com.android.support:support-annotations:25.1.0'
+    compileOnly 'com.android.support:support-annotations:25.1.0'
     //noinspection GradleDependency,GradleCompatible
-    api 'com.android.support:support-v4:22.1.0'
-    api project(':refresh-layout')
+    compileOnly 'com.android.support:support-v4:22.1.0'
+    compileOnly project(':refresh-layout')
 }
 //
 //publish {
@@ -51,3 +51,5 @@ dependencies {
 //    archivesPath = '../build/outputs' //指定将要上传的压缩包路径，如果不写则默认上传系统生成的jar和aar
 ////    archivesName = 'bintray-release'  //指定将要上传的压缩包所含的关键字，如果不写，默认过滤artifactId
 //}
+
+
